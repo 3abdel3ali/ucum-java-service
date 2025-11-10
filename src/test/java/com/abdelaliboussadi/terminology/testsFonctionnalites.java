@@ -22,21 +22,21 @@ public class testsFonctionnalites {
 
         // ------------------------------------------------------------
         // MODE TEST AUTOMATIQUE si le programme est lancé sans arguments
-        // ------------------------------------------------------------
-        if (args.length == 0) {
-            System.out.println("Mode TEST activé (aucun argument fourni).");
+        // // ------------------------------------------------------------
+        // if (args.length == 0) {
+        //     System.out.println("Mode TEST activé (aucun argument fourni).");
 
-            // 👉 ADAPTE CET CHEMIN selon où tu as placé ucum-essence.xml
-            String defaultUcumPath = "C:\\\\dev\\\\git\\\\ucum_client\\\\ucum-client\\\\src\\\\resources\\\\ucum-essence.xml";
+        //     // 👉 ADAPTE CET CHEMIN selon où tu as placé ucum-essence.xml
+        //     String defaultUcumPath = "C:\\\\dev\\\\git\\\\ucum_client\\\\ucum-client\\\\src\\\\resources\\\\ucum-essence.xml";
 
-            // Exemple de mot-clé à rechercher
-            String defaultKeyword = "gr";
+        //     // Exemple de mot-clé à rechercher
+        //     String defaultKeyword = "gr";
 
-            System.out.println("Utilisation des valeurs :");
-            System.out.println("  Fichier UCUM  : " + defaultUcumPath);
-            System.out.println("  Mot-clé testé : " + defaultKeyword);
-            args = new String[]{ defaultUcumPath, defaultKeyword };
-        }
+        //     System.out.println("Utilisation des valeurs :");
+        //     System.out.println("  Fichier UCUM  : " + defaultUcumPath);
+        //     System.out.println("  Mot-clé testé : " + defaultKeyword);
+        //     args = new String[]{ defaultUcumPath, defaultKeyword };
+        // }
         // ------------------------------------------------------------
 
         // Vérification des arguments
