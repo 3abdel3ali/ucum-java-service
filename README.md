@@ -1,4 +1,4 @@
-# UCUM Client
+# UcumTerminologyCodesValidator
 
 A Java application for validating UCUM (Unified Code for Units of Measure) codes using the FHIR UCUM library.
 
