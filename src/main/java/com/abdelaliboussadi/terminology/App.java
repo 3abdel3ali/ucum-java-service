@@ -21,7 +21,7 @@ public class App
         if (args.length == 0) {
         args = new String[]{
                 "C:\\dev\\git\\ucum_client\\ucum-client\\src\\resources\\ucum-essence.xml",
-                "mgHH"
+                "ml"
         };
     }
         if (args.length != 2) {
