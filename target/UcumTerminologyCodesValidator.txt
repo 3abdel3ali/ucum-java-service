@@ -1,0 +1,27 @@
+19:41:30.759 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:41:30.761 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - the argument is missing
+19:41:53.732 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:41:53.783 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chargement de la définition UCUM réussi.
+19:41:53.784 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analyse du code UCUM : "lo" ...
+19:41:53.788 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Le code UCUM est INVALIDE ou INCONNU : lo
+19:41:53.788 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Détail de l'erreur : Error processing unit 'lo': The unit 'lo' is unknown' at position 0
+19:45:42.885 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:45:42.887 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - the argument is missing
+19:45:42.887 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution ended with an exception.
+19:45:42.887 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
+19:47:13.160 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:48:48.090 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:48:48.092 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chemin d'accès invalide pour le fichier de définition UCUM : :\invalid\path
+19:48:48.092 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution ended with an exception.
+19:48:48.092 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
+19:49:36.414 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:49:36.415 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] ERROR com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chemin d'accès invalide pour le fichier de définition UCUM : :\dev\git\ucum_client\ucum-client\src\resources\ucum-essence.xml
+19:49:36.415 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution ended with an exception.
+19:49:36.415 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
+19:50:06.408 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+19:50:06.458 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chargement de la définition UCUM réussi.
+19:50:06.458 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analyse du code UCUM : "ml" ...
+19:50:06.462 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Le code UCUM est VALIDE.
+19:50:06.462 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Résultat d'analyse (brut) : (milliliter)
+19:50:06.462 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution completed successfully.
+19:50:06.462 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
