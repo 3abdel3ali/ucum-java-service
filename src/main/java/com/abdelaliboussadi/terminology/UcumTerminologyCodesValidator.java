@@ -27,8 +27,8 @@ public class UcumTerminologyCodesValidator
         logger.info("Starting UCUM Terminology Codes Validation execution.");
         if (args.length == 0) {
         args = new String[]{
-                "C:\\dev\\git\\ucum_client\\ucum-client\\src\\resources\\ucum-essence.xml",
-                "ml"
+                PropertiesUtil.getProperties("ucum.essence.path", "C:\\dev\\git\\ucum_client\\ucum-client\\src\\resources\\ucum-essence.xml"),
+                PropertiesUtil.getProperties("ucum.default.code", "ml")
         };
     }
         if (args.length != 2) {

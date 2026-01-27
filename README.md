@@ -53,16 +53,47 @@ After building, you can run it with:
 java -cp target/classes:path/to/dependencies com.abdelaliboussadi.terminology.App path/to/ucum-essence.xml your_ucum_code
 ```
 
-## Usage
+## Configuration
 
-The application takes two command-line arguments:
+The application supports configuration through a `configuration.properties` file placed in the project root directory. This allows you to customize default values without modifying the code.
 
-1. **Path to UCUM essence XML file**: The file containing UCUM unit definitions (default: `src/main/resources/ucum-essence.xml`).
-2. **UCUM code to validate**: The unit code to check (e.g., "mg", "kg/m2").
+### Configuration File Format
 
-**Note**: Both arguments are required and cannot be null, empty, or contain only whitespace characters. The first argument must be a valid file path. If invalid arguments or paths are provided, the application will log an appropriate error ("the argument is missing" or "Chemin d'accès invalide...") and exit.
+Create a file named `configuration.properties` in the project root with the following properties:
 
-If no arguments are provided, it uses default values (the XML in resources and a test code "ml").
+```properties
+# Default path to UCUM essence XML file
+ucum.essence.path=C:/path/to/ucum-essence.xml
+
+# Default UCUM code to validate when no arguments provided
+ucum.default.code=ml
+
+# Log file configuration
+log.file.path=target/UcumTerminologyCodesValidator.txt
+
+# Application settings
+app.name=UCUM Terminology Codes Validator
+app.version=1.0
+
+# Validation settings
+validation.timeout.seconds=30
+```
+
+### Configuration Override
+
+You can override the configuration file location using a system property:
+
+```bash
+mvn exec:java -Dconfig.file=/path/to/custom.properties
+```
+
+### Priority Order
+
+The application uses the following priority order for configuration:
+
+1. **Command-line arguments** (highest priority)
+2. **Configuration file properties**
+3. **Hardcoded defaults** (lowest priority)
 
 ### Examples
 
@@ -122,8 +153,10 @@ mvn test
 ## Project Structure
 
 - `src/main/java/com/abdelaliboussadi/terminology/UcumTerminologyCodesValidator.java`: Main application class.
+- `src/main/java/com/abdelaliboussadi/terminology/PropertiesUtil.java`: Utility class for reading configuration properties.
 - `src/main/resources/ucum-essence.xml`: UCUM unit definitions.
 - `src/main/resources/log4j2.xml`: Log4j 2 configuration for logging setup.
+- `configuration.properties`: Optional configuration file for customizing default values.
 - `src/test/java/`: Unit tests.
 - `target/UcumTerminologyCodesValidator.txt`: Generated log file containing execution results (created after first run).
 - `pom.xml`: Maven configuration.
