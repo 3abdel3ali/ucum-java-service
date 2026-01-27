@@ -16,28 +16,26 @@ public class PropertiesUtil {
     /**
      * Get a property value by key from the configuration.properties file
      * @param propertyName the property key to retrieve
-     * @return the property value, or null if not found or error occurs
+     * @return the property value
+     * @throws IllegalArgumentException if property is not found
      */
     public static String getProperties(final String propertyName) {
         if (properties == null) {
             loadProperties();
         }
 
-        if (properties != null) {
-            String value = properties.getProperty(propertyName);
-            if (value != null) {
-                logger.debug("Loaded property '{}' with value: {}", propertyName, value);
-            } else {
-                logger.warn("Property '{}' not found in configuration file", propertyName);
-            }
-            return value;
+        String value = properties.getProperty(propertyName);
+        if (value == null || value.trim().isEmpty()) {
+            logger.error("Required property '{}' not found in configuration file", propertyName);
+            throw new IllegalArgumentException("Required property '" + propertyName + "' is missing from configuration.properties");
         }
-
-        return null;
+        logger.debug("Loaded property '{}' with value: {}", propertyName, value);
+        return value.trim();
     }
 
     /**
      * Load properties from the configuration.properties file
+     * @throws RuntimeException if configuration file cannot be loaded
      */
     private static void loadProperties() {
         properties = new Properties();
@@ -57,11 +55,13 @@ public class PropertiesUtil {
             properties.load(file);
             logger.info("Successfully loaded configuration from: {}", configPath);
         } catch (final FileNotFoundException e) {
-            logger.warn("Configuration file not found at: {}. Using default values.", configPath);
-            properties = null;
+            String errorMsg = "Configuration file not found at: " + configPath + ". This file is required to run the application.";
+            logger.error(errorMsg);
+            throw new RuntimeException(errorMsg, e);
         } catch (final IOException e) {
-            logger.error("Error reading configuration file at: {}", configPath, e);
-            properties = null;
+            String errorMsg = "Error reading configuration file at: " + configPath;
+            logger.error(errorMsg, e);
+            throw new RuntimeException(errorMsg, e);
         } finally {
             if (file != null) {
                 try {
@@ -73,14 +73,4 @@ public class PropertiesUtil {
         }
     }
 
-    /**
-     * Get a property value with a default fallback
-     * @param propertyName the property key to retrieve
-     * @param defaultValue the default value to return if property is not found
-     * @return the property value or default value
-     */
-    public static String getProperties(final String propertyName, final String defaultValue) {
-        String value = getProperties(propertyName);
-        return (value != null) ? value : defaultValue;
-    }
 }
