@@ -1,0 +1,10 @@
+14:07:03.321 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+14:07:03.325 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.PropertiesUtil - Successfully loaded configuration from: configuration.properties
+14:07:03.354 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chargement de la définition UCUM réussi.
+14:07:03.355 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analyse du code UCUM : "ml" ...
+14:07:03.358 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Le code UCUM est VALIDE.
+14:07:03.358 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Résultat d'analyse (brut) : (milliliter)
+14:07:03.359 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Conversion demandée : 1 kg -> [lb_av]
+14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Résultat de conversion : 2.20462262184877580722974 [lb_av]
+14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution completed successfully.
+14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 

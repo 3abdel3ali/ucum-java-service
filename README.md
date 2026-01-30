@@ -1,6 +1,6 @@
 # UcumTerminologyCodesValidator
 
-A Java application for validating UCUM (Unified Code for Units of Measure) codes using the FHIR UCUM library.
+A Java application for validating and converting UCUM (Unified Code for Units of Measure) codes using the FHIR UCUM library.
 
 ## Description
 
