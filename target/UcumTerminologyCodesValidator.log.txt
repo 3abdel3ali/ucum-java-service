@@ -1,0 +1,8 @@
+09:54:14.217 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+09:54:14.220 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.PropertiesUtil - Successfully loaded configuration from: configuration.properties
+09:54:14.249 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Chargement de la définition UCUM réussi.
+09:54:14.250 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analyse du code UCUM : "ml" ...
+09:54:14.253 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Le code UCUM est VALIDE.
+09:54:14.253 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Résultat d'analyse (brut) : (milliliter)
+09:54:14.253 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution completed successfully.
+09:54:14.253 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
