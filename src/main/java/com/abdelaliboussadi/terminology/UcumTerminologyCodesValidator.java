@@ -1,3 +1,14 @@
+/*
+License
+
+This project is licensed under the Apache License 2.0 with an additional attribution clause.
+
+Any use of this code must provide explicit attribution to:
+- The original author: Abdelali Boussadi, PhD
+- The original repository: https://github.com/3abdel3ali/ucum-java-service
+
+See the LICENSE file for full details.
+*/
 package com.abdelaliboussadi.terminology;
 
 import org.fhir.ucum.UcumEssenceService;
