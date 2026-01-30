@@ -80,6 +80,10 @@ public class UcumTerminologyCodesValidator
              * Le type de retour exact (String/objet) peut contenir des détails ; ici
              * on affiche le résultat texte si l'analyse renvoie quelque chose d'utile.
              */
+ucumSvc.
+            
+            
+            
             String analysisResult = ucumSvc.analyse(candidateCode);
             // Si on arrive ici, l'analyse s'est déroulée sans exception -> unité valide
             logger.info("Le code UCUM est VALIDE.");
