@@ -8,3 +8,13 @@
 14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Résultat de conversion : 2.20462262184877580722974 [lb_av]
 14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution completed successfully.
 14:07:03.368 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 
+14:54:23.085 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Starting UCUM Terminology Codes Validation execution.
+14:54:23.090 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.PropertiesUtil - Successfully loaded configuration from: configuration.properties
+14:54:23.117 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - UCUM definition loaded successfully.
+14:54:23.117 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analyzing UCUM code: "ml" ...
+14:54:23.121 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - UCUM code is VALID.
+14:54:23.121 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Analysis result (raw): (milliliter)
+14:54:23.121 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Conversion requested: 1 kg -> [lb_av]
+14:54:23.129 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Conversion result: 2.20462262184877580722974 [lb_av]
+14:54:23.129 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - Execution completed successfully.
+14:54:23.129 [com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator.main()] INFO  com.abdelaliboussadi.terminology.UcumTerminologyCodesValidator - 

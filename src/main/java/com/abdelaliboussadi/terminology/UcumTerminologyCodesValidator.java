@@ -106,13 +106,13 @@ public class UcumTerminologyCodesValidator
         try {
             Path defPath = Paths.get(ucumDefinitionPath);
             if (!Files.exists(defPath)) {
-                logger.error("Fichier de définition UCUM introuvable : " + ucumDefinitionPath);
+                logger.error("UCUM definition file not found: " + ucumDefinitionPath);
                 logger.info("Execution ended with an exception.");
                 logger.info("");
                 System.exit(2);
             }
         } catch (InvalidPathException e) {
-            logger.error("Chemin d'accès invalide pour le fichier de définition UCUM : " + ucumDefinitionPath);
+            logger.error("Invalid path for UCUM definition file: " + ucumDefinitionPath);
             logger.info("Execution ended with an exception.");
             logger.info("");
             System.exit(2);
@@ -125,7 +125,7 @@ public class UcumTerminologyCodesValidator
             // (Si ta version de la lib prend InputStream, adapte en conséquence.)
             ucumSvc = new UcumEssenceService(ucumDefinitionPath);
 
-            logger.info("Chargement de la définition UCUM réussi.");
+            logger.info("UCUM definition loaded successfully.");
             if (codeValidation) {
                 validateCode(ucumSvc, candidateCode);
             }
@@ -145,15 +145,15 @@ public class UcumTerminologyCodesValidator
         } catch (UcumException e) {
             // La librairie signale les erreurs d'analyse via UcumException.
             // On considère que c'est un code invalide / inconnu.
-            logger.error("Le code UCUM est INVALIDE ou INCONNU : " + candidateCode);
-            logger.error("Détail de l'erreur : " + e.getMessage());
+            logger.error("UCUM code is INVALID or UNKNOWN: " + candidateCode);
+            logger.error("Error details: " + e.getMessage());
             logger.info("Execution ended with an exception.");
             logger.info("");
             // (ne pas System.exit ici si tu veux continuer; ici on termine avec code non-nul)
             System.exit(3);
         } catch (Exception e) {
             // Toute autre erreur inattendue (IO, runtime...) -> on l'affiche pour debug.
-            logger.error("Erreur inattendue lors de la validation UCUM : " + e.getMessage());
+            logger.error("Unexpected error during UCUM validation: " + e.getMessage());
             e.printStackTrace();
             logger.info("Execution ended with an exception.");
             logger.info("");
@@ -165,10 +165,10 @@ public class UcumTerminologyCodesValidator
         if (candidateCode == null || candidateCode.trim().isEmpty()) {
             throw new IllegalArgumentException("the argument is missing");
         }
-        logger.info("Analyse du code UCUM : \"" + candidateCode + "\" ...");
+        logger.info("Analyzing UCUM code: \"" + candidateCode + "\" ...");
         String analysisResult = ucumSvc.analyse(candidateCode);
-        logger.info("Le code UCUM est VALIDE.");
-        logger.info("Résultat d'analyse (brut) : " + analysisResult);
+        logger.info("UCUM code is VALID.");
+        logger.info("Analysis result (raw): " + analysisResult);
     }
 
     private static void convertValue(UcumService ucumSvc, String value, String sourceUnit, String destinationUnit) throws UcumException {
@@ -176,9 +176,9 @@ public class UcumTerminologyCodesValidator
                 || destinationUnit == null || destinationUnit.trim().isEmpty()) {
             throw new IllegalArgumentException("conversion arguments are missing");
         }
-        logger.info("Conversion demandée : " + value + " " + sourceUnit + " -> " + destinationUnit);
+        logger.info("Conversion requested: " + value + " " + sourceUnit + " -> " + destinationUnit);
         Decimal converted = ucumSvc.convert(new Decimal(value), sourceUnit, destinationUnit);
-        logger.info("Résultat de conversion : " + converted.asDecimal() + " " + destinationUnit);
+        logger.info("Conversion result: " + converted.asDecimal() + " " + destinationUnit);
     }
     
 }
